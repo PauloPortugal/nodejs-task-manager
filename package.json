@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-task-manager",
+  "version": "1.0.0",
+  "description": "A Node.js REST API with [Mongoose](https://mongoosejs.com/docs/) and [Express.js](http://expressjs.com/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloPortugal/nodejs-task-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloPortugal/nodejs-task-manager/issues"
+  },
+  "homepage": "https://github.com/PauloPortugal/nodejs-task-manager#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "validator": "^13.5.2"
+  }
+}
