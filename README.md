@@ -6,6 +6,11 @@ This is part of Andrew Mead's (mead.io) "The Complete Node.js Developer Course".
 ## Goal
 Create a task manager via a REST API.
 
+Additionaly uses:
+ * [async/await](https://javascript.info/async-await) to handle asyncronous operations
+ * [bcryptjs](https://www.npmjs.com/package/bcryptjs) to hash passwords
+
+
 ## CURL examples
 
 Below are a few `curl` commands to exercise the REST API task resources
