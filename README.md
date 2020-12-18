@@ -9,6 +9,8 @@ Create a task manager via a REST API.
 Additionaly uses:
  * [async/await](https://javascript.info/async-await) to handle asyncronous operations
  * [bcryptjs](https://www.npmjs.com/package/bcryptjs) to hash passwords
+ * [JWT](https://www.npmjs.com/package/jsonwebtoken) for representing claims securely between the client and the API
+ * [Express.js middleware](https://expressjs.com/en/guide/using-middleware.html) to validate user sessions
 
 
 ## CURL examples
@@ -39,8 +41,8 @@ Below are a few `curl` commands to exercise the REST API user resources
 # create a new user
 curl -X POST -H "Content-Type: application/json" -i "localhost:3000/users" -d '{"name":"James", "password":"somePaw98", "email":"test@test.com", "age":38}'
 
-# return all users
-curl -X GET -H "Content-Type: application/json" -i "localhost:3000/users"
+# return user profile
+curl -X GET -H "Content-Type: application/json" -i "localhost:3000/users/me"
 
 # return one user
 curl -X GET -H "Content-Type: application/json" -i "localhost:3000/users/:id"
